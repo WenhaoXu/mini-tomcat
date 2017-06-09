@@ -16,8 +16,9 @@ public class Request {
         StringBuilder sb  = new StringBuilder();
         byte[] buf = new byte[512];
         try {
-            while (in.read(buf)!= -1) {
-                sb.append(new String(buf));
+            int i = in.read(buf);
+            for (int j = 0; j <  i;j++ ) {
+                sb.append((char) buf[j]);
             }
             System.out.println(sb.toString());
         } catch (IOException e) {
