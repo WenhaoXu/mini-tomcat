@@ -16,7 +16,7 @@ public class Processor {
             request.parse();
             Response response = new Response(socket.getOutputStream());
             response.sendResponse();
-            response.close();
+//            response.close();
 
         } catch (IOException e) {
             e.printStackTrace();

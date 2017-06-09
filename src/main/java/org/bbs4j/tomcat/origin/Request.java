@@ -13,16 +13,16 @@ public class Request {
     }
 
     public void parse() {
-//        StringBuilder sb  = new StringBuilder();
-//        byte[] buf = new byte[512];
-//        try {
-//            while (in.read(buf)!= -1) {
-//                sb.append(new String(buf));
-//            }
-//            System.out.println(sb.toString());
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            System.err.println(e.toString());
-//        }
+        StringBuilder sb  = new StringBuilder();
+        byte[] buf = new byte[512];
+        try {
+            while (in.read(buf)!= -1) {
+                sb.append(new String(buf));
+            }
+            System.out.println(sb.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println(e.toString());
+        }
     }
 }
