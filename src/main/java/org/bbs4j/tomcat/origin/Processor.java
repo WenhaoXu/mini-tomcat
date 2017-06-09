@@ -13,7 +13,7 @@ public class Processor {
         try {
             InputStream in = socket.getInputStream();
             Request request = new Request(in);
-            request.parse();
+//            request.parse();
             Response response = new Response(socket.getOutputStream());
             response.sendResponse();
 //            response.close();
